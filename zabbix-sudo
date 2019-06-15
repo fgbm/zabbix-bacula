@@ -1,0 +1,2 @@
+zabbix ALL = (root) NOPASSWD: /etc/zabbix/scripts/bacula_discovery
+zabbix ALL = (root) NOPASSWD: /etc/zabbix/scripts/bacula_check_job
