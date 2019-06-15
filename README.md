@@ -1,8 +1,8 @@
 zabbix-bacula
 ===
-Bacula backups monitoring for Zabbix
+Мониторинг системы резервного копирования Bacula для Zabbix
 
-resources/items/triggers
+Русерсы/метрики/триггеры
 ===
 * Auto Discovery JOBS (lld discovery)
 * JOB status (item)
@@ -12,18 +12,15 @@ resources/items/triggers
 * Backup doesnt executed at last 24 hours (trigger)
 * Backup status doesnt received at last 6h (trigger)
 
-roadmap
-===
-* Install script
 
-installation
+Установка
 ===
-* create a sudo entry to execute script
-* copy conf/Bacula.conf to /etc/zabbix/zabbix.agent.d/
-* copy scripts/ to /etc/zabbix/scripts
-* import template
+* скопировать zabbix-sudo в /etc/sudoers.d/
+* скопировать conf/Bacula.conf в /etc/zabbix/zabbix.agent.d/
+* скопировать scripts/ в /etc/zabbix/scripts
+* импортировать шаблон (templates/zbx_export_templates.xml)
 
-contributors
+Автор
 =====
-* Fábio Miguel Mello (me)
+* Fábio Miguel Mello
 
